@@ -1,3 +1,54 @@
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/Orbitron/static/Orbitron-Regular.ttf")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./assets/fonts/Orbitron/static/Orbitron-Medium.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./assets/fonts/Orbitron/static/Orbitron-SemiBold.ttf")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./assets/fonts/Orbitron/static/Orbitron-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("./assets/fonts/Orbitron/static/Orbitron-ExtraBold.ttf")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./assets/fonts/Orbitron/static/Orbitron-Black.ttf") format("woff2");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,15 +65,12 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   background: var(--bg-color);
   color: var(--text);
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: "Orbitron", sans-serif;
-  font-weight: 100;
   font-style: normal;
 }
 
@@ -154,7 +202,7 @@ main {
   right: 0px;
   width: 55vw;
   max-width: 700px;
-  height: 666px;
+  height: 602px;
   object-fit: cover;
   z-index: 1;
   opacity: 0.9;
@@ -182,7 +230,7 @@ main {
 
 .fact {
   cursor: pointer;
-  padding: 10px;
+  padding: 20px;
   background: #333;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -442,7 +490,6 @@ footer {
   .text {
     text-align: center;
   }
-  .title,
   .text {
     font-size: 20px;
     width: auto;
@@ -524,14 +571,20 @@ footer {
   }
 
   .header.scrolled .nav {
-    top: 100px;
+    top: 118px;
   }
   .header-content {
     justify-content: space-between;
   }
+  .fact {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 520px) {
+  .header.scrolled .nav {
+    top: 93px;
+  }
   .block-info {
     height: 450px;
     gap: 20px;
@@ -541,6 +594,7 @@ footer {
   }
   .title {
     font-size: 22px;
+    width: auto;
   }
   .subtitle {
     font-size: 12px;
