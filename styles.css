@@ -190,6 +190,7 @@ main {
   transition: background 0.3s ease-in-out;
   display: flex;
   flex-direction: column-reverse;
+  text-align: center;
 }
 
 .fact:hover {
@@ -206,6 +207,7 @@ main {
 .fact-info.visible {
   display: block;
   animation: fadeIn 0.3s ease-in-out;
+  text-align: center;
 }
 
 .max-content {
